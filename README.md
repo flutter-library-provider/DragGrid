@@ -4,9 +4,19 @@
 
 <p>
   <img 
-    src="https://linpengteng.github.io/resource/flutter-grid/gif/video.gif" 
-    alt="video.gif"
-    width="99%"
+    src="https://linpengteng.github.io/resource/flutter-grid/gif/vertical-1.gif" 
+    alt="vertical-1.gif"
+    width="32%"
+  >
+  <img
+    src="https://linpengteng.github.io/resource/flutter-grid/gif/vertical-2.gif"
+    alt="vertical-2.gif"
+    width="32%"
+  >
+  <img
+    src="https://linpengteng.github.io/resource/flutter-grid/gif/horizontal-1.gif"
+    alt="horizontal-1.gif"
+    width="32%"
   >
 </p>
 
