@@ -1,3 +1,7 @@
+## 1.0.2
+
+- Update README.md
+
 ## 1.0.0
 
 - Complete the basic functions of DragGrid

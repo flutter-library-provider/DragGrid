@@ -18,7 +18,7 @@
 
    ```
      dependencies:
-       drag_grid: ^1.0.0
+       drag_grid: ^1.0.2
    ```
 
 2. 在命令行运行如下
@@ -100,11 +100,11 @@
 
 | API    | 说明                                                                | 参数                                                    |
 | :----- | :------------------------------------------------------------------ | :------------------------------------------------------ |
-| update | 用来从 DragGrid 获取最新的 itemList Api                             | List<T> itemList                                        |
+| update | 用来从 DragGrid 获取最新的 itemList Api                             | List\<T> itemList                                       |
 | append | 手动追加新 Grid Item, 会重新渲染 DragGrid，并触发 itemListChanger   | {required T item, bool animation = true}                |
 | remove | 手动移除某个 Grid Item, 会重新渲染 DragGrid，并触发 itemListChanger | {required int index, bool animation = true}             |
 | insert | 手动插入某个 Grid Item, 会重新渲染 DragGrid，并触发 itemListChanger | {int index = 0, required T item, bool animation = true} |
-| reset  | 手动重置 itemList, 会重新渲染 DragGrid，并触发 itemListChanger      | {required List<T> itemList, bool animation = true}      |
+| reset  | 手动重置 itemList, 会重新渲染 DragGrid，并触发 itemListChanger      | {required List\<T> itemList, bool animation = true}     |
 
 <br/>
 
