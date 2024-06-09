@@ -1,7 +1,7 @@
 name: drag_grid
 description: 'A Draggable GridView, Support the use of animation transitions during drag, and provide gridController to manually update sorting'
 version: 1.0.0
-homepage:
+homepage: https://github.com/flutter-library-provider/DragGrid
 
 environment:
   sdk: '>=2.17.0 <4.0.0'
