@@ -22,6 +22,12 @@
 
 <br/>
 
+## 实现原理
+
+如果你对 **DragGrid** 如何实现的原理感兴趣，可以看这篇 [图文详解 - 如何开发 Draggable GridView 组件](https://juejin.cn/post/7380233813987426354) 文章
+
+<br/>
+
 ## 如何安装
 
 1. 在 `pubspec.yaml` 添加
