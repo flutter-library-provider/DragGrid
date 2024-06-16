@@ -1,3 +1,9 @@
+## 1.0.3
+
+- fix the offset bug  
+  the offset may not be accurate when external animation is playing  
+  for example: using in GetX.bottomSheet
+
 ## 1.0.2
 
 - Update README.md

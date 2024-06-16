@@ -258,6 +258,8 @@ class _DragGridState<T> extends State<DragGrid<T>>
             );
           },
           onDragStarted: () {
+            // fix the bug: offset is not accurate when using in Get.bottomSheet (other animation is playing)
+            callOnceFrameCallback();
             onDragStarted?.call();
             currentIndex = index;
           },

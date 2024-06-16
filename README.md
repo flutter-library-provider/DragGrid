@@ -34,7 +34,7 @@
 
    ```
      dependencies:
-       drag_grid: ^1.0.2
+       drag_grid: ^1.0.3
    ```
 
 2. 在命令行运行如下
