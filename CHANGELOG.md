@@ -1,3 +1,7 @@
+## 1.0.4
+
+- chore: upgrade some dependencies
+
 ## 1.0.3
 
 - fix the offset bug  
