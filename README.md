@@ -4,17 +4,17 @@
 
 <p>
   <img 
-    src="https://linpengteng.github.io/resource/flutter-grid/gif/vertical-1.gif" 
+    src="https://linpengteng.github.io/resource/flutter-grid/vertical-1.gif" 
     alt="vertical-1.gif"
     width="32%"
   >
   <img
-    src="https://linpengteng.github.io/resource/flutter-grid/gif/vertical-2.gif"
+    src="https://linpengteng.github.io/resource/flutter-grid/vertical-2.gif"
     alt="vertical-2.gif"
     width="32%"
   >
   <img
-    src="https://linpengteng.github.io/resource/flutter-grid/gif/horizontal-1.gif"
+    src="https://linpengteng.github.io/resource/flutter-grid/horizontal-1.gif"
     alt="horizontal-1.gif"
     width="32%"
   >
@@ -34,7 +34,7 @@
 
    ```
      dependencies:
-       drag_grid: ^1.0.5
+       drag_grid: ^1.0.6
    ```
 
 2. 在命令行运行如下

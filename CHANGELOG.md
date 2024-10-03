@@ -1,3 +1,7 @@
+## 1.0.6
+
+- chore: upgrade dependencies, and update README.md
+
 ## 1.0.5
 
 - chore: update some docs
