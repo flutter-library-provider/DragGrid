@@ -1,3 +1,8 @@
+## 1.0.7
+
+- fix: support SliverGridDelegate mainAxisExtent ([Using mainAxisExtent bug](https://github.com/flutter-library-provider/DragGrid/issues/3))
+- fix: grid size boundary bug ([BoxConstraints(w=66.0, h=-8.4; NOT NORMALIZED)](https://github.com/flutter-library-provider/DragGrid/issues/2))
+
 ## 1.0.6
 
 - chore: upgrade dependencies, and update README.md

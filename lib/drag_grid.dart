@@ -50,6 +50,7 @@ class _DragGridState<T> extends State<DragGrid<T>>
   late int crossCount;
 
   int? currentIndex;
+  double? mainAxisExtent;
   double mainAxisSpacing = 0.0;
   double crossAxisSpacing = 0.0;
   double childAspectRatio = 1.0;
@@ -76,6 +77,7 @@ class _DragGridState<T> extends State<DragGrid<T>>
     gridController.update(renderItems);
 
     if (sliverGridDelegate is SliverGridDelegateWithFixedCrossAxisCount) {
+      mainAxisExtent = (sliverGridDelegate as dynamic).mainAxisExtent;
       mainAxisSpacing = (sliverGridDelegate as dynamic).mainAxisSpacing;
       crossAxisSpacing = (sliverGridDelegate as dynamic).crossAxisSpacing;
       childAspectRatio = (sliverGridDelegate as dynamic).childAspectRatio;
@@ -85,6 +87,7 @@ class _DragGridState<T> extends State<DragGrid<T>>
     }
 
     if (sliverGridDelegate is SliverGridDelegateWithMaxCrossAxisExtent) {
+      mainAxisExtent = (sliverGridDelegate as dynamic).mainAxisExtent;
       mainAxisSpacing = (sliverGridDelegate as dynamic).mainAxisSpacing;
       crossAxisSpacing = (sliverGridDelegate as dynamic).crossAxisSpacing;
       childAspectRatio = (sliverGridDelegate as dynamic).childAspectRatio;
@@ -403,6 +406,7 @@ class _DragGridState<T> extends State<DragGrid<T>>
         total: itemCount,
         viewSize: context.size!,
         crossCount: crossCount,
+        mainAxisExtent: mainAxisExtent,
         childAspectRatio: childAspectRatio,
         crossAxisSpacing: crossAxisSpacing,
         mainAxisSpacing: mainAxisSpacing,

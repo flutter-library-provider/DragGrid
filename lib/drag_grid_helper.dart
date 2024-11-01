@@ -278,6 +278,7 @@ int getAnimationTargetIndex({
 Size getDragGridSize({
   required int total,
   required Size viewSize,
+  required double? mainAxisExtent,
   required double childAspectRatio,
   required double crossAxisSpacing,
   required double mainAxisSpacing,
@@ -295,14 +296,36 @@ Size getDragGridSize({
 
   if (direction == Axis.vertical) {
     width = (ctxWidth - crossAxisSpacing * (crossCount - 1)) / crossCount;
-    height = width / childAspectRatio * line + mainAxisSpacing * (line - 1);
-    return Size(ctxWidth, height);
+
+    if (mainAxisExtent == null) {
+      height = width / childAspectRatio * line + mainAxisSpacing * (line - 1);
+    }
+
+    if (mainAxisExtent != null) {
+      height = mainAxisExtent * line + mainAxisSpacing * (line - 1);
+    }
+
+    return Size(
+      max(ctxWidth, 0),
+      max(height, 0),
+    );
   }
 
   if (direction == Axis.horizontal) {
     height = (ctxHeight - crossAxisSpacing * (crossCount - 1)) / crossCount;
-    width = height / childAspectRatio * line + mainAxisSpacing * (line - 1);
-    return Size(width, ctxHeight);
+
+    if (mainAxisExtent == null) {
+      width = height / childAspectRatio * line + mainAxisSpacing * (line - 1);
+    }
+
+    if (mainAxisExtent != null) {
+      width = mainAxisExtent * line + mainAxisSpacing * (line - 1);
+    }
+
+    return Size(
+      max(width, 0),
+      max(ctxHeight, 0),
+    );
   }
 
   return Size.zero;
