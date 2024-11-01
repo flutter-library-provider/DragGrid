@@ -96,7 +96,7 @@ Animation<Offset>? createGridItemSlideAnimation({
   return null;
 }
 
-/// Create GridItem slideAnimation (from -> end)
+/// Create GridItem fadeAnimation (from -> end)
 Animation<double>? createGridItemFadeAnimation({
   required bool enable,
   required AnimationController animateController,
