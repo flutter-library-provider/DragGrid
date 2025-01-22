@@ -1,3 +1,8 @@
+## 1.0.8
+
+- fix: some bugs
+- chore: upgrade dependencies
+
 ## 1.0.7
 
 - fix: support SliverGridDelegate mainAxisExtent ([Using mainAxisExtent bug](https://github.com/flutter-library-provider/DragGrid/issues/3))
